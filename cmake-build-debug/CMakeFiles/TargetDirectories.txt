@@ -1,0 +1,3 @@
+C:/Users/ipeac/CLionProjects/emailHW/cmake-build-debug/CMakeFiles/emailHW.dir
+C:/Users/ipeac/CLionProjects/emailHW/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ipeac/CLionProjects/emailHW/cmake-build-debug/CMakeFiles/rebuild_cache.dir
