@@ -58,15 +58,7 @@ void concatPartToEmail() {
     printf("입력 : [이름] [시스템] [도메인] [기관] [국가]\n");
     printf("(E-mail에 국가 이름 없을 경우 \"usa\" 입력)\n");
     scanf("%s %s %s %s %s", &name, &system, &domain, &org, &country);
-    
-    if (strcmp(country, "usa") == 0) {
-        printf("E-mail : %s@%s.%s.%s", name, system, domain, org);
-        
-    } else {
-        printf("E-mail : %s@%s.%s.%s.%s", name, system, domain, org, country);
-        
-    }
-    
+    printf("E-mail : %s@%s.%s.%s.%s", name, system, domain, org, country);
     
 }
 
