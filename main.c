@@ -66,7 +66,7 @@ void concatPartToEmail() {
         printf("E-mail : %s@%s.%s.%s.%s", name, system, domain, org, country);
         
     }
-        
+    
     
 }
 
@@ -79,10 +79,10 @@ void concatPartToEmail() {
 void parseEmailToPart() {
     char email_str[50];
     printf("E-mail을 입력 하시오 : \n");
-    printf("(예:name@sys.domain.org OR name@sys.domain.org.country\n");
+    printf("( 예:name@sys.domain.org OR name@sys.domain.org.country )\n");
     
     scanf("%s", &email_str);
-    
+    strlwr(email_str);
     char *ptr = strtok(email_str, ".");
     
     char *special_name_sys;
@@ -107,7 +107,6 @@ void parseEmailToPart() {
                 special_organization = ptr;
                 break;
             case 3:
-                printf(ptr);
                 special_country = ptr;
                 break;
             default:
@@ -128,7 +127,6 @@ void parseEmailToPart() {
             case 1:
                 special_sys = ptr2;
                 break;
-            
             
             default:
                 break;
